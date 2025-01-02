@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    background-color: black;
+    color: white;   
+}
+body{
+    background-image: url('bgimage.jpeg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+#navbar{
+    color: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   padding: 1rem 2rem;
+   left :0;
+   top: 0;
+   width: 100%;
+   /* overflow: hidden; */
+   z-index: 1;
+
+   }
+ul{
+    list-style: none;
+    display: flex;
+   gap: 2rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    background-color: rgb(28, 28, 179);
+    border-radius: 2px;
+    }
+.welcome{
+     margin-top: 10rem; 
+     color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    z-index: 1;
+}
+.welcome button{
+    text-decoration: none;
+    color: inherit;
+    border-radius: 4rem;
+    border: none;
+   font-size:  2rem;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: white;
+   background-color: rgb(255, 123, 0);
+   padding-left: 1rem;
+   padding-right: 1rem;
+   cursor: pointer;
+  text-decoration: none;
+ 
+  
+}
+.welcome  button a{
+    text-decoration: none;
+    color:white;
+}
+.welcome button:hover{
+    opacity: 0.4;
+    text-decoration: none;
+    
+}
+.bgimage{
+    z-index: 100;
+}
+
+
+ /* this style for about us  */
+ .abouimg{
+    padding: 2rem;
+
+ }
+ 

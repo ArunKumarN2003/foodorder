@@ -1,0 +1,241 @@
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(221, 31, 31);
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color:teal;
+}
+.nav{
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    font-size: 1 rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.box{
+    color: white;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+   position: relative;
+  
+
+}
+.cart-count{
+    position: absolute;
+    top: -5px;
+    padding: 3px;
+    height: 20px;
+    width: 20px;
+    right: 0;
+    border-radius: 50%;
+    background-color: rgb(4, 219, 119);
+    z-index: 99;
+}
+#cart-icon{
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding:60px;
+    background-color: midnightblue;
+   
+}
+h2.title{
+     font-size: 25px;
+     font-weight: 500;
+     color: rgb(190, 176, 176);
+}
+img{
+    width:100% ;
+
+}
+
+.shop-content{
+    display: grid;
+  grid-template-columns: repeat(auto-fit ,minmax(220px,auto)) ;
+  /* display: flex;
+  flex-wrap: wrap; */
+  justify-content: center;
+  gap: 5px;
+}
+.pic{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+}
+.pic img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    
+    
+}
+.food-box{
+    position: relative;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+}
+.pic:hover img{
+    transform: scale(1.5);
+
+}
+.food-img{
+    transition: 0.2s;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+}
+.food-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: red;
+}
+.food-price{
+    font-weight: 500;
+}
+.add-cart{
+
+    position: absolute;
+   bottom: 0;
+    right: 0;
+    background-color: green;
+    padding: 5px;
+    color: aliceblue;
+    cursor: pointer;
+
+
+    
+}
+.add-cart:hover{
+    opacity: 0.4;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 px 1 px 4px   rgb(40, 37, 37,0.1);
+    z-index: 100;
+}
+.cart-active{
+    right: 0;
+    transition: 0.5s;
+}
+.cart-tit{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(236, 228, 228);
+    
+}
+.cart-box{
+    display: grid;
+    grid-template-columns: 50% 32% 18%;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+    border-bottom: 1px solid rgb(236, 228, 228);
+    padding-bottom: 10px;
+}
+.cart-img{
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    padding: 5px;
+
+}
+.detail-box{
+    display: grid;
+    gap: 15px;
+}
+.price-box{
+    display: flex;
+    justify-content: space-around;
+
+}
+.cart-remove{
+    margin-left: 30px;
+    font-size: 24px;
+    cursor: pointer;
+    color: rgb(221, 9, 9);
+}
+
+  /* .cart-quantity::-webkit-inner-spin-button,
+    .cart-quantity::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    } */
+    .cart-quantity{
+       
+      outline: none;
+        width: 38px;
+        text-align: center;
+        font-size: 16px;
+
+    }
+    .total{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 24px;
+
+    }
+    .total-title{
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+    .total-price{
+        margin-left: 8px;
+
+    }
+    .btn-buy{
+        padding: 12px 20px;
+        color: white;
+        background-color: rgb(21, 223, 105);
+        font-weight: 600;
+        cursor: pointer;
+        border: none;
+
+    }
+    #cart-close{
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        font-size: 30px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+
+    }
+
